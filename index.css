@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom gradient text utility */
+.text-gradient-hegra {
+  @apply bg-gradient-to-r from-[#339999] to-[#f5af47] bg-clip-text text-transparent;
+}
+
+.button-gradient-hegra {
+  @apply bg-gradient-to-r from-[#339999] to-[#f5af47] hover:from-[#2a8585] hover:to-[#e09e34] text-white;
+}
+
+.highlight-gradient-hegra {
+   @apply bg-gradient-to-r from-[#339999] to-[#f5af47];
+}
+
+/* For horizontal scrolling sections */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
