@@ -6,6 +6,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Page } from '../App';
 import { Search, Star, Ticket, PlusCircle, Globe, Menu, X } from 'lucide-react';
+import logo from '../assets/Hegira Vertical Logo.svg'; // path relatif dari `Navbar.tsx`
 
 interface NavbarProps {
   setCurrentPage: (page: Page) => void;
